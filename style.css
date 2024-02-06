@@ -107,6 +107,12 @@ p{
     align-items: center;
     justify-content: center;
 }
+.caja-resultado.parrado-visible {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0;
+    
+}
 .texto-no-encontrado{
     width: 336px;
     height: 304px;
@@ -118,5 +124,7 @@ footer{
     height: 100px;
 }
 
-
+.ocultar{
+    display: none;
+}
 

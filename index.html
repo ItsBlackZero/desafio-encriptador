@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +30,11 @@
         
             
             <div class="buttons">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="btn-encriptar" onclick="encriptarContenido()">Encriptar</button>
+                <button id="btn-desencriptar" class="btn-desencriptar"  onclick="desencriptarContenido() ">Desencriptar</button>
             </div>
         </section>
-        <section class="caja-resultado">
+        <section class="caja-resultado" id="caja-resultado">
             
             <div class="texto-no-encontrado">
                 <img src="img/Muñeco.png" alt="Muñeco alura" class="imagen-resultado">
@@ -47,6 +47,8 @@
     <footer>
         este es el 
     </footer>
+
+    <script src="index.js"></script>
     
     
 </body>
