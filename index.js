@@ -28,7 +28,8 @@ function desencriptarContenido(){
     if(verificarCampoVacio() != true){
         var valorDesencriptado = desencriptar();
         document.getElementById("texto").value= "";
-        estiloRespuestaContenido(valorDesencriptado);
+        var parrafoResultado = document.getElementById("parrafo-resultado");
+        parrafoResultado.innerText =valorDesencriptado;
         ocultarImagen();
     }
 }
@@ -56,7 +57,6 @@ function agregarButtonCopiar (){
     var textoButton = document.createTextNode("Copiar");
     nuevoButton.appendChild(textoButton);
     nuevoButton.addEventListener("click",function(){
-        console.log(document.getElementById("parrafo-resultado").innerText);
         var elementoTemporal = document.createElement("textarea");
 
         var textoParaCopiar = document.getElementById("parrafo-resultado");
